@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SheCodes</title>
+    <style>
+      h1{
+        color:#87CEEB;
+        text-align:center;
+        font-size:48px;
+        text-decoration:underline;
+        font-weight:bold;
+        font-family:Arial, Helvetica, sans-serif;
+      }
+      h2{
+        color:#272044;
+        text-align:center;
+      }
+      body{
+        background-color:#f5f0fe;
+      }
+      .Coders{
+        color:blue;
+      }
+      .Courses{
+        color:red;
+      }
+      .Stories{
+        color:green;
+      }
+      img{
+        width:400px;
+        display:block;
+        margin:30px auto;
+      }
+      p{
+        text-align:center;
+      }
+      ul {
+        list-style-type: none;  
+        padding: 0;  
+        text-align: center;  
+        margin-top: 20px; 
+      }
+      li{
+        display: inline-block; 
+        margin: 10px 20px; 
+      }
+      a {
+        text-decoration: none; 
+        font-size:18px;
+        font-weight: 600;
+        transition: color 0.3s ease; 
+      }
+      a:hover{
+        color: #885df1; 
+        text-decoration:underline;
+      }
+      button {
+        margin: 20px auto;
+        display: block;
+        color: #885df1;
+        font-size: 16px;
+        background: transparent;
+        padding: 15px 20px;
+        border:2px solid #885df1;
+        border-radius:30px;
+        box-shadow:0px 4px 6px rgba(0,0,0,0.2);
+      }
+      button:hover {
+        color: #fff;
+        background-color:#7d4ef4;
+        cursor: pointer;
+      }
+      .contact-container {
+        text-align: center;
+      }
+      .contact-details {
+        color:#7d4ef4;
+        display:inline;
+      }
+      .contact-details a{
+        display: inline;
+        font-size: 18px;
+        color:black;
+        text-decoration: none;
+      }
+      .contact-details a:hover{
+        color: #f5f0fe;
+      }
+    </style>
+</head>
+<body>
+    <h1><em>SheCodes</em></h1>
+    <h2>Coding Workshop</h2>
+    <button>Apply now</button>
+<ul>
+  <li><a class="Coders"href="https://www.shecodes.io/students"target="_blank">Coders</a></li>
+  <li><a class="Courses"href="https://www.shecodes.io/workshops" target ="_blank">Courses</a></li>
+  <li><a class="Stories"href="https://www.shecodes.io/stories" target="_blank">Stories</a></li>
+</ul>
+<hr>
+<p>
+<strong>More Info</strong>
+</p>
+</hr>
+<img src="https://as2.ftcdn.net/v2/jpg/11/21/91/91/1000_F_1121919169_N0xfqjtDhlNyXoV7TLeHSjgYPR2hWASk.jpg" width="300px">
+<div class="contact-container">
+        <div class="contact-details">
+            <span>Email: <a href="https://mailto:hello@shecodes.io">hello@shecodes.io</a></span>
+            <span>Instagram: <a href="https://www.instagram.com/shecodesio/" target="_blank">shecodesio</a></span>
+        </div>
+</div>
+<script>
+  function eligible(){
+      let firstName=prompt("what is your first name:");
+      let age=prompt("enter your age:");
+      if (age>=18){
+      let h2=document.querySelector("h2");
+      h2.innerHTML="Hi,${firstName}!Welcome to SheCodes!";
+  }
+  else{
+      let h2=document.querySelector("h2");
+      h2.innerHTML="Sorry,"+firstName+"! You cannot join SheCodes";
+  }
+  }
+  let applybutton=document.querySelector("button");
+  applybutton.addEventListener("click",eligible);
+</script>
+</body>
+</html>
