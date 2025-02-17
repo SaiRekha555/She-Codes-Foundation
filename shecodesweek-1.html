@@ -112,21 +112,6 @@
             <span>Instagram: <a href="https://www.instagram.com/shecodesio/" target="_blank">shecodesio</a></span>
         </div>
 </div>
-<script>
-  function eligible(){
-      let firstName=prompt("what is your first name:");
-      let age=prompt("enter your age:");
-      if (age>=18){
-      let h2=document.querySelector("h2");
-      h2.innerHTML="Hi,${firstName}!Welcome to SheCodes!";
-  }
-  else{
-      let h2=document.querySelector("h2");
-      h2.innerHTML="Sorry,"+firstName+"! You cannot join SheCodes";
-  }
-  }
-  let applybutton=document.querySelector("button");
-  applybutton.addEventListener("click",eligible);
 </script>
 </body>
 </html>
