@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Recipe Book</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ff00d4, #00ddff);
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+            padding: 1.5rem;
+            background: linear-gradient(to right, #ff00d4, #00ddff);
+            color: white;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 2rem;
+        }
+
+        .recipe-card {
+            background: #fbf2d5;
+            border: 2px solid #ff5d9e;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            text-align: center;
+            overflow: hidden;
+            padding: 1rem;
+            transition: transform 0.3s;
+        }
+
+        .recipe-card:hover {
+            transform: scale(1.05);
+        }
+
+        .recipe-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .recipe-card button {
+            background: #5be7a9;
+            color: #962071;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .recipe-card button:hover {
+            background: #2de0d7;
+        }
+
+        .recipe-details {
+            padding: 1rem;
+            font-size: 0.9rem;
+            text-align: left;
+            background: #ffd5c2;
+            border-top: 2px solid #2f55ff;
+            border-radius: 5px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        footer {
+            text-align: center;
+            background: #f5f9ee;
+            color: black;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🍛 Indian Recipe Book</h1>
+    <p>Explore delicious Indian recipes! 🥘</p>
+</header>
+
+<main>
+    <div class="recipe-card">
+        <h2>Butter Chicken</h2>
+        <img src="https://www.simplyrecipes.com/thmb/5ZBFQJLjKo5vJped7ZxNNS8u5pc=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__01__Butter-Chicken-LEAD-1-f8a0cd09ea9442ce93651887f164db03.jpg" alt="Butter Chicken">
+        <button class="show-recipe">Show Recipe</button>
+        <div class="recipe-details hidden">
+            <p><strong>Ingredients:</strong> Chicken, butter, tomatoes, cream, spices.</p>
+            <p><strong>Instructions:</strong> Cook chicken with spices. Prepare tomato-based sauce with butter. Mix and serve.</p>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h2>Paneer Tikka</h2>
+        <img src="https://www.nehascookbook.com/wp-content/uploads/2022/11/Paneer-tikka-masala-WS-500x500.jpg" alt="Paneer Tikka">
+        <button class="show-recipe">Show Recipe</button>
+        <div class="recipe-details hidden">
+            <p><strong>Ingredients:</strong> Paneer, yogurt, spices, bell peppers.</p>
+            <p><strong>Instructions:</strong> Marinate paneer, grill it, and serve hot.</p>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h2>Masala Dosa</h2>
+        <img src="https://www.palatesdesire.com/wp-content/uploads/2019/09/Mysore_Masala_Dosa@Palates_Desire-1024x738.jpg" alt="Masala Dosa">
+        <button class="show-recipe">Show Recipe</button>
+        <div class="recipe-details hidden">
+            <p><strong>Ingredients:</strong> Rice batter, potatoes, curry leaves.</p>
+            <p><strong>Instructions:</strong> Make dosa, fill with spiced potato mix, and serve with chutney.</p>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h2>Chole Bhature</h2>
+        <img src="https://static.toiimg.com/thumb/resizemode-4,width-1280,height-720,msid-62601713/62601713.jpg" alt="Chole Bhature">
+        <button class="show-recipe">Show Recipe</button>
+        <div class="recipe-details hidden">
+            <p><strong>Ingredients:</strong> Chickpeas, flour, yogurt, spices.</p>
+            <p><strong>Instructions:</strong> Cook chickpeas with spices. Fry bhature and serve together.</p>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h2>Hyderabadi Biryani</h2>
+        <img src="https://hinzcooking.com/wp-content/uploads/2019/08/Hyderabadi-Chicken-Dum-Biryani-Recipe-2-1.jpg" alt="Hyderabadi Biryani">
+        <button class="show-recipe">Show Recipe</button>
+        <div class="recipe-details hidden">
+            <p><strong>Ingredients:</strong> Basmati rice, chicken/mutton, spices, yogurt.</p>
+            <p><strong>Instructions:</strong> Marinate meat, cook rice separately, then layer and cook on low heat.</p>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h2>Rasgulla</h2>
+        <img src="https://madhurasrecipe.com/wp-content/uploads/2023/10/Rasgulla-1.jpg" alt="Rasgulla">
+        <button class="show-recipe">Show Recipe</button>
+        <div class="recipe-details hidden">
+            <p><strong>Ingredients:</strong> Paneer, sugar, water, cardamom.</p>
+            <p><strong>Instructions:</strong> Boil paneer dumplings in sugar syrup and serve chilled.</p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2025 Indian Recipe Book</p>
+</footer>
+
+<script>
+    let buttons = document.querySelectorAll(".show-recipe");
+    buttons.forEach(button => {
+        button.addEventListener("click", (event) => {
+            let recipeDetails = event.target.nextElementSibling;
+            recipeDetails.classList.toggle("hidden");
+            event.target.textContent = recipeDetails.classList.contains("hidden") ? "Show Recipe" : "Hide Recipe";
+        });
+    });
+</script>
+
+</body>
+</html>"make all the recipe images in the same size" and make the paragraph Explore delicious Indian Recipes with different color
